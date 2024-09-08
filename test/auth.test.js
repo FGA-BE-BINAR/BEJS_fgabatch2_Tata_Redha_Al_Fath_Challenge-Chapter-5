@@ -22,7 +22,7 @@ jest.mock("../config/prisma", () => ({
 
 const bcrypt = require("bcrypt");
 jest.mock("bcrypt");
-
+ 
 describe("Auth Controller", () => {
   describe("POST /auth/signin", () => {
     it("should return a token for valid credentials", async () => {
